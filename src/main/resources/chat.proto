@@ -1,0 +1,15 @@
+syntax = "proto3";
+package com.bmv.protobuf.messages;
+
+option java_package = "com.cuixe.socket";
+option java_outer_classname = "vo";
+
+message PingRequest {
+    int64 sendingTime = 1;
+    int64 requestTime = 2;
+}
+
+message PingResponse {
+    int64 sendingTime = 1;
+    int64 requestTime = 2;
+}
